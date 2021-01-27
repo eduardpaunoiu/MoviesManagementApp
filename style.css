@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Raleway:wght@200;300&family=Rubik:wght@300&display=swap");
+/* Sass Template */
+/* Global classes */
+button, button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Typography classes */
+.font-baloo {
+    font-family: "Baloo Chettan 2", cursive;
+}
+
+.font-raleway_light {
+    font-family: "Raleway Light 300", cursive;
+}
+
+.font_raleway_extra_light {
+    font-family: "Raleway Extra-light 200", cursive;
+}
+
+.font_rubik {
+    font-family: "Rubik Light 300", cursive;
+}
+
+.font-size-12 {
+    font-size: 12px;
+}
+
+.font-size-14 {
+    font-size: 14px;
+}
+
+.font-size-16 {
+    font-size: 16px;
+}
+
+.font-size-20 {
+    font-size: 20px;
+}
+
+/* Color Template */
+.color-primary {
+    color: #003859;
+}
+
+.color-primary-bg {
+    background: #003859;
+}
+
+.color-second {
+    color: #00A5C3;
+}
+
+.color-second-bg {
+    background: #00A5C3;
+}
+
+.color-yellow {
+    color: FFD289;
+}
+
+.color-yellow-bg {
+    background: FFD289;
+}
+
+.color-black {
+    color: #000000;
+}
+
+.color-black-bg {
+    background: #000000;
+}
+
+.color-orange {
+    color: #dbb623;
+}
+
+.color-orange-bg {
+    background: #dbb623;
+}
+
+/* Centering Template*/
+.center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+:root {
+    --gradient: linear-gradient(90deg, #745236, rgb(150, 116, 65), #d4840c);
+
+}
+
+.body {
+    font-family: basic-sans, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.125em;
+    line-height: 1.6;
+    color: #333;
+    background: #ddd;
+    background-size: 300%;
+    background-image: var(--gradient);
+    animation: bg-animation 25s infinite;
+}
+
+@keyframes bg-animation {
+    0% {background-position: left}
+    50% {background-position: right}
+    100% {background-position: left}
+}
+
+.content {
+    background: rgb(252, 252, 252);
+    width: 100vw;
+    padding: 3em;
+    box-shadow: 10 10 3em rgba(0,0,0,.15);
+}
+
+.title {
+    margin: 10 10 10em;
+    text-transform: lowercase;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 3rem;
+    color: #ca701c;
+    line-height: 1;
+    margin: 10
+;
+
+    background-image: var(--gradient);
+    background-clip: text;
+    color: transparent;
+
+    background-size: 400%;
+    transition: background-position 0.5s;
+}
+
+.title:hover {
+    background-position: right;
+}
+
+
+.fun {
+    color: white;
+    border: 0;
+    cursor: pointer;
+    padding: .2em 5em;
+    background: linear-gradient(90deg, #2c1d09, rgb(228, 183, 59), #c07109);
+    background-size: 500%;
+    background-position: left;
+    transition: background-position 350ms;
+}
+
+.fun:hover {
+    background-position: right;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar1 {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+}
+
+.navbar2 {
+    position: fixed; /* Set the navbar to fixed position */
+    bottom: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
